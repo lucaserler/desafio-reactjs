@@ -1,0 +1,21 @@
+.header {
+  left: 0;
+  top: 0;
+  background-color: rgb(68, 42, 128);
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  height: 60px;
+  padding: 4px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.imgH{
+    width: 4em;
+}
+
+.btnLink {
+  color: azure;
+  text-decoration: none;
+}

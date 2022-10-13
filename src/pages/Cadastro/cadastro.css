@@ -1,0 +1,81 @@
+.cadastro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 70vh;
+  padding: 0 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(218, 218, 218);
+}
+
+.form-cadastro {
+  color: rgb(218, 218, 218);
+  display: flex;
+  align-items: center;
+  text-align: start;
+  padding: 0.5rem;
+  height: 145px;
+}
+
+.form-cadastro input {
+  color: aliceblue;
+  background-color: #00939d00;
+  border-bottom: 2px solid #5b14b8;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  box-shadow: 0 0 0 0;
+  border: 1 none;
+  outline: 0;
+  font-size: 20px;
+}
+
+.button-cadastro {
+  color: #9bacac;
+  transition: all 0.5s;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  width: 6em;
+}
+
+.button-cadastro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #00939d00;
+  transition: all 0.3s;
+}
+
+.button-cadastro:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+
+.button-cadastro::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid #5b14b8;
+  transform: scale(1.2, 1.2);
+}
+
+.button-cadastro:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
